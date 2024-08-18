@@ -136,3 +136,7 @@ print('Accuracy on test data: ',test_data_accuracy)
 
 # WE HAVE AROUND 94-97 accuracy WHICH IS GOOD. IF THE DIFF BET training and test accuracy WAS MORE THEN OUR MODEL IS
 # CONSIDERED underfitted or overfitted.
+
+# saving the model
+joblib.dump(model, 'logistic_regression_model.pkl')
+
