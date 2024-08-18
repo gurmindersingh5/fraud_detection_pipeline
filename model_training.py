@@ -4,7 +4,11 @@
 import pyspark
 import pandas as pd
 import numpy as np
+import joblib
+
 from pyspark.sql.session import SparkSession
+from pyspark.ml.classification import LogisticRegressionModel
+
 
 spark = SparkSession.builder.appName('logistic_regression_model_training').getOrCreate()
 
