@@ -1,3 +1,6 @@
+<img width="786" alt="Screenshot 2024-08-18 at 7 25 07 PM" src="https://github.com/user-attachments/assets/4297906f-29d6-4144-a7d7-e1c6d52fd955">
+
+
 Fraud Detection Pipeline Using Spark Streaming, Kafka, and Cassandra
 
 This project is a real-time fraud detection pipeline that uses Apache Spark Streaming to process transactional data coming 
