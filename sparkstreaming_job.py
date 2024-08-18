@@ -9,6 +9,7 @@ from pyspark.ml.classification import LogisticRegressionModel
 spark = SparkSession.builder \
     .appName("Fraud Detection Pipeline") \
     .config("spark.jars.packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0") \
+    .config('spark.jars.packages', 'com.datastax.spark:spark-cassandra-connector_2.12:3.4.0') \
     .config("spark.cassandra.connection.host", "34.29.15.39") \
     .config("spark.cassandra.connection.port", "9042") \
     .getOrCreate()
