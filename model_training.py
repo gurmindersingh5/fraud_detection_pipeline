@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 from pyspark.sql.session import SparkSession
 
-spark = SparkSession.builder.appName('linear_regression_model_training').getOrCreate()
+spark = SparkSession.builder.appName('logistic_regression_model_training').getOrCreate()
 
 df = spark.read.csv('datasets/transactions.csv', header=True, inferSchema=True)
 
