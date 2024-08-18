@@ -1,4 +1,4 @@
-'''Linear Regression Model training example'''
+'''Linear Regression Model training example Jupyter Notebook'''
 '''required pkgs: pysaprk, pandas, scikit-learn'''
 
 import pyspark
