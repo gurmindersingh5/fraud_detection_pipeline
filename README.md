@@ -81,9 +81,8 @@ handle late data arrivals.
   
 6.
 Feature Engineering in Streaming Context:
-Challenge: Implementing complex feature engineering like transaction frequency and average transaction amount in a       
-streaming context.
-Solution: Window functions and aggregations were used to calculate features based on a time window, ensuring that features  were calculated correctly and efficiently.
+Challenge- Implementing complex feature engineering like transaction frequency and average transaction amount in a streaming context.
+Solution- Window functions and aggregations were used to calculate features based on a time window, ensuring that features  were calculated correctly and efficiently.
   
 7. Model Integration:
 Challenge: Integrating a pre-trained machine learning model into a Spark Streaming job.
