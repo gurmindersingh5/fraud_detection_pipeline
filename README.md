@@ -1,5 +1,5 @@
 Fraud Detection Pipeline Using Spark Streaming, Kafka, and Cassandra
-
+<img width="786" alt="Screenshot 2024-08-18 at 7 25 07 PM" src="https://github.com/user-attachments/assets/4297906f-29d6-4144-a7d7-e1c6d52fd955">
 This project is a real-time fraud detection pipeline that uses Apache Spark Streaming to process transactional data coming 
 from Kafka, applies a pre-trained machine learning model to predict fraudulent transactions, and writes the predictions to 
 Cassandra. The pipeline is designed to be scalable and efficient, capable of handling large volumes of streaming data with 
@@ -16,8 +16,6 @@ Table of Contents:
 
 ARCHITECTURE:
 ------------
-<img width="786" alt="Screenshot 2024-08-18 at 7 25 07 PM" src="https://github.com/user-attachments/assets/4297906f-29d6-4144-a7d7-e1c6d52fd955">
-
 1. Kafka: Acts as a message broker, streaming transactional data to the Spark job.
 2. Spark Streaming: Processes the real-time data, performs feature engineering, and applies a machine learning model to detect fraud.
 3. Cassandra: Stores the predictions made by the model, allowing for fast retrieval and analysis.
