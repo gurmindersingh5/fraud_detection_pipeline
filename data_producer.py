@@ -24,7 +24,7 @@ chunk = []
 
 with open('/path/to/datasets/transactional_dataset.csv', 'r') as file:
     reader = csv.DictReader(file)  # Use DictReader to directly work with column names
-    for i, row in enumerate(reader):
+    for i, row in enumerate(reader, 1):
         # we are converting to original format and then sending the JSON format to kafka then we will recieve an cast to schema in spark
         record = {
             "step": int(row["step"]),
@@ -41,7 +41,7 @@ with open('/path/to/datasets/transactional_dataset.csv', 'r') as file:
         }
         chunk.append(record)
 
-        if (i + 1) % chunk_size == 0:
+        if i % chunk_size == 0:
             for record in chunk:
                 producer.send(topic_name, value=record)
             chunk = []
