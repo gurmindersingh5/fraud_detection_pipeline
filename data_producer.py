@@ -10,7 +10,7 @@ import json
 import csv
 
 # Kafka configuration
-bootstrap_servers = '34.29.15.39:9092'
+bootstrap_servers = '<kafka_serverip>:9092'
 topic_name = 'transactions'
 
 # Create a producer instance
@@ -22,7 +22,7 @@ producer = KafkaProducer(
 chunk_size = 10000
 chunk = []
 
-with open('/Users/gurmindersingh/Desktop/RESUMES/datasets/transactional_dataset.csv', 'r') as file:
+with open('/path/to/datasets/transactional_dataset.csv', 'r') as file:
     reader = csv.DictReader(file)  # Use DictReader to directly work with column names
     for i, row in enumerate(reader):
         # we are converting to original format and then sending the JSON format to kafka then we will recieve an cast to schema in spark
